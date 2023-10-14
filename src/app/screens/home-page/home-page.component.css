@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display:flex;/*distribución*/
+}
+
+
+h1{/*nombres de peliculas*/
+    font-size: 1rem;
+    font-family: 'Lobster', sans-serif;
+    margin: 8px;
+    color:rgb(24, 27, 173);
+}
+
+h2{/*diseño del titulo*/
+    color: rgba(113,99,186,255);
+    font-family: 'Lobster', sans-serif;
+    align-items: center;
+    font-size: 3rem;
+}
+h3{/*Titulos categorías*/
+    font-family: 'Acme', sans-serif;
+    color: rgb(108, 203, 219);
+}
+/*Acá empieza la barra de menu*/
+.sliderbar{
+    position: sticky;
+    top: 0;
+    width: 75px;/*ocultar la letra del menu*/
+    height: 100vh;
+    padding:   1rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,255);
+}
+.sliderbar:hover{
+    width: 190px; /*que tanto se desplaza el menu)*/
+    transition: 0.5s;
+}
+.menu img{
+    height: 50px;
+    padding: 10px;
+
+    
+}
+.menu{
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 12px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, .active{
+    background: #e0e0e058;
+}
+.menu a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1rem;/*tamaño de los iconos del menu*/
+}
+
+/*menu del navbar*/
+.main--content{
+position: relative;
+background: #482a89;/*fondo de pantalla*/
+width: 95%; /*acomodó centrado el contenedor de action*/
+padding: 2%/*tamañao y oculto los simbolos del mnu*/
+}
+.useritem{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*Centro del espaciado del contenedor*/
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--tittle{
+    color: rgba(113,99,186,255);    
+}
+
+/*card container*/
+.card-container{
+    width: 100%;
+    height: 300px;
+    background:#fff;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 20px;
+    padding: 8px;
+
+}
+.cards{
+    width: 180px;
+    height: 250px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+ 
+}
+.cards:hover{
+    transform: translateY(-10px);
+}
+.card-header{
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-img{
+    min-width: 30px;
+    width: auto;
+    height: 100%;
+}
+.card-body{
+    height: 350px;
+    text-align: center;
+}
+  /*pruebas search*/
+  .InputContainer {
+    width: 410px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+  }
+  /*prueba log*/
+.dropdown{
+    display: inline-block;
+}
+  .dropdown button{
+    background-color: #8138c5;
+    color: rgb(229, 241, 241);
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer; 
+    border-radius: 8px;
+  }
+  .dropdown a{
+    display:block;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px; 
+  }
+  .dropdown .cuadrito{
+    display: none;
+    position: absolute;
+    background:#8138c5;
+    box-shadow: 2px 5px 5px black;/*sombra*/
+    min-width: 100px;/*largo del cuadrito*/
+    border-radius: 8px;
+  }
+  .dropdown:hover .cuadrito{
+display:flex;
+  }
+
+  .dropdown a:hover{
+    background-color: #e4e8dd;
+  }
