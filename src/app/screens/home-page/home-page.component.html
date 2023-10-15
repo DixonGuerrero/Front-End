@@ -94,54 +94,17 @@
       
 
       <div class="card-container">
-        <div class="cards">
+        <div class="cards" *ngFor="let movie of moviesRecommended.slice(0, 7)">
           <div class="card-header">
-            <img
-              src="https://ca-times.brightspotcdn.com/dims4/default/b46402a/2147483647/strip/true/crop/2250x1500+248+0/resize/2400x1600!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F59%2F44%2Fc3b3d4104d20a7ca22456d585bb3%2F2530-t2-00070.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img [src]="movie.image" alt="{{ movie.title }}" class="card-img" />
           </div>
           <div class="card-body">
-            <h1>forms</h1>
+            <h1>{{ movie.title }}</h1>
           </div>
         </div>
-        <div class="cards">
-          <div class="card-header">
-            <img
-              src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/07/30/16591757825079.jpg"
-              alt=""
-              class="card-img"
-            />
-          </div>
-          <div class="card-body">
-            <h1>xd</h1>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card-header">
-            <img
-              src="https://www.gndiario.com/sites/default/files/noticias/mejores-peliculas-2022%20%281%29.jpg"
-              alt=""
-              class="card-img"
-            />
-          </div>
-          <div class="card-body">
-            <h1>ulon</h1>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card-header">
-            <img
-              src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2017/12/margotrobbiesuicide.jpg?fit=1000%2C625&quality=50&strip=all&ssl=1"
-              alt=""
-              class="card-img"
-            />
-          </div>
-          <div class="card-body">
-            <h1>love</h1>
-          </div>
-        </div>
+        
+       
+       
         <!-- see more-->
         <button class="cta">
             <span class="span">See more</span>
@@ -159,53 +122,47 @@
         <!-- finaliza el primer container card-->
       </div>
       <!-- finaliza el primer container card-->
-      <h3 class="main-tittle">Action</h3>
-      <div class="card-container">
-        <div class="cards">
-          <div class="card-header">
-            <img
-              src="https://ca-times.brightspotcdn.com/dims4/default/b46402a/2147483647/strip/true/crop/2250x1500+248+0/resize/2400x1600!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F59%2F44%2Fc3b3d4104d20a7ca22456d585bb3%2F2530-t2-00070.jpg"
-              alt=""
-              class="card-img"
-            />
-          </div>
-          <div class="card-body">
-            <h1>mario</h1>
-          </div>
+    <h3 class="main-tittle">New Movies</h3>
+    
+    
+    <div class="card-container">
+      <div class="cards" *ngFor="let movie of moviesNew.slice(0, 8)">
+        <div class="card-header">
+          <img [src]="movie.image" alt="{{ movie.title }}" class="card-img" />
         </div>
+        <div class="card-body">
+          <h1>{{ movie.title }}</h1>
+        </div>
+      </div>
       </div>
       <!-- Cards prueba de las peliculas-->
-      <h3 class="main-tittle">Action</h3>
+      <h3 class="main-tittle">Top Rated</h3>
+      
+      
       <div class="card-container">
-        <div class="cards">
+        <div class="cards" *ngFor="let movie of moviesTopRated.slice(0, 8)">
           <div class="card-header">
-            <img
-              src="https://ca-times.brightspotcdn.com/dims4/default/b46402a/2147483647/strip/true/crop/2250x1500+248+0/resize/2400x1600!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F59%2F44%2Fc3b3d4104d20a7ca22456d585bb3%2F2530-t2-00070.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img [src]="movie.image" alt="{{ movie.title }}" class="card-img" />
           </div>
           <div class="card-body">
-            <h1>mario</h1>
+            <h1>{{ movie.title }}</h1>
           </div>
         </div>
       </div>
-      <!-- finaliza el primer container card-->
-      <h3 class="main-tittle">Action</h3>
-      <div class="card-container">
-        <div class="cards">
-          <div class="card-header">
-            <img
-              src="https://ca-times.brightspotcdn.com/dims4/default/b46402a/2147483647/strip/true/crop/2250x1500+248+0/resize/2400x1600!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F59%2F44%2Fc3b3d4104d20a7ca22456d585bb3%2F2530-t2-00070.jpg"
-              alt=""
-              class="card-img"
-            />
-          </div>
-          <div class="card-body">
-            <h1>mario</h1>
-          </div>
+       <!-- finaliza el primer container card-->
+    <h3 class="main-tittle">Up Comming Movies</h3>
+    
+    
+    <div class="card-container">
+      <div class="cards" *ngFor="let movie of moviesUpComming.slice(0, 8)">
+        <div class="card-header">
+          <img [src]="movie.image" alt="{{ movie.title }}" class="card-img" />
+        </div>
+        <div class="card-body">
+          <h1>{{ movie.title }}</h1>
         </div>
       </div>
+    </div>
     </div> <!--general-->
     
 
