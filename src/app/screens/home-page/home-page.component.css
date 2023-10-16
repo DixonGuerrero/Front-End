@@ -40,7 +40,7 @@ h3{/*Titulos categorías*/
     color: #fff;
     overflow: hidden;
     transition: all 0.5s linear;
-    background: rgba(113,99,186,255);
+    background: linear-gradient(#41bdc1,#6a9cc0,#ad95cd);
 }
 .sliderbar:hover{
     width: 190px; /*que tanto se desplaza el menu)*/
@@ -84,7 +84,7 @@ h3{/*Titulos categorías*/
 /*menu del navbar*/
 .main--content{
 position: relative;
-background: #482a89;/*fondo de pantalla*/
+background: #fff;/*fondo de pantalla*/
 width: 95%; /*acomodó centrado el contenedor de action*/
 padding: 2%/*tamañao y oculto los simbolos del mnu*/
 }
@@ -100,7 +100,7 @@ padding: 2%/*tamañao y oculto los simbolos del mnu*/
     align-items: center;/*Centro del espaciado del contenedor*/
     flex-wrap: wrap;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 10px 2rem;
     margin-bottom: 1rem;
 }
@@ -175,7 +175,7 @@ padding: 2%/*tamañao y oculto los simbolos del mnu*/
     color: rgb(19, 19, 19);
     font-size: 13.4px;
   }
-  /*prueba log*/
+  /*user profile*/
 .dropdown{
     display: inline-block;
 }
