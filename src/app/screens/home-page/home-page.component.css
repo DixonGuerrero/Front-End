@@ -48,9 +48,7 @@ h3{/*Titulos categorías*/
 }
 .menu img{
     height: 50px;
-    padding: 10px;
-
-    
+    padding: 10px; 
 }
 .menu{
     position: relative;
@@ -86,7 +84,7 @@ h3{/*Titulos categorías*/
 position: relative;
 background: #fff;/*fondo de pantalla*/
 width: 95%; /*acomodó centrado el contenedor de action*/
-padding: 2%/*tamañao y oculto los simbolos del mnu*/
+padding: 2px;/*tamaño y oculto los simbolos del mnu*/
 }
 .useritem{
     width: 50px;

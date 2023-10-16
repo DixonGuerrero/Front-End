@@ -13,6 +13,7 @@ import { FavoritesComponent } from './screens/favorites/favorites.component';
 import { SignUComponent } from './screens/sign-up/sign-u.component';
 import { AdminEditPersonsComponent } from './screens/admin-edit-persons/admin-edit-persons.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { LoginPageComponent } from './screens/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     FavoritesComponent,
     SignUComponent,
     AdminEditPersonsComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
