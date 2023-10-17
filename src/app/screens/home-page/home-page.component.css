@@ -21,7 +21,7 @@ h1{/*nombres de peliculas*/
 }
 
 h2{/*diseño del titulo*/
-    color: rgba(113,99,186,255);
+    color: #4b22a6;
     font-family: 'Lobster', sans-serif;
     align-items: center;
     font-size: 3rem;
@@ -40,7 +40,7 @@ h3{/*Titulos categorías*/
     color: #fff;
     overflow: hidden;
     transition: all 0.5s linear;
-    background: rgba(113,99,186,255);
+    background: linear-gradient(#41bdc1,#6a9cc0,#ad95cd);
 }
 .sliderbar:hover{
     width: 190px; /*que tanto se desplaza el menu)*/
@@ -48,9 +48,7 @@ h3{/*Titulos categorías*/
 }
 .menu img{
     height: 50px;
-    padding: 10px;
-
-    
+    padding: 10px; 
 }
 .menu{
     position: relative;
@@ -84,9 +82,10 @@ h3{/*Titulos categorías*/
 /*menu del navbar*/
 .main--content{
 position: relative;
-background: #482a89;/*fondo de pantalla*/
+background: #fff;/*fondo de pantalla*/
 width: 95%; /*acomodó centrado el contenedor de action*/
-padding: 2%/*tamañao y oculto los simbolos del mnu*/
+padding: 2px;/*tamaño y oculto los simbolos del mnu*/
+
 }
 .useritem{
     width: 50px;
@@ -100,9 +99,12 @@ padding: 2%/*tamañao y oculto los simbolos del mnu*/
     align-items: center;/*Centro del espaciado del contenedor*/
     flex-wrap: wrap;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(170, 148, 232);
+    box-shadow: 0 0 25px #0ef;
     padding: 10px 2rem;
     margin-bottom: 1rem;
+    border-bottom: 2px solid aqua;
 }
 .header--tittle{
     color: rgba(113,99,186,255);    
@@ -175,7 +177,7 @@ padding: 2%/*tamañao y oculto los simbolos del mnu*/
     color: rgb(19, 19, 19);
     font-size: 13.4px;
   }
-  /*prueba log*/
+  /*user profile*/
 .dropdown{
     display: inline-block;
 }

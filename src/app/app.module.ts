@@ -13,6 +13,7 @@ import { FavoritesComponent } from './screens/favorites/favorites.component';
 import { SignUComponent } from './screens/sign-up/sign-u.component';
 import { AdminEditPersonsComponent } from './screens/dashboard/admin-edit-persons/admin-edit-persons.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+<<<<<<< HEAD
 import { BodyComponent } from './screens/dashboard/body/body.component';
 import { SidenavComponent } from './screens/dashboard/sidenav/sidenav.component';
 import { StatisticsComponent } from './screens/dashboard/statistics/statistics.component';
@@ -20,6 +21,9 @@ import { SettingsComponent } from './screens/dashboard/settings/settings.compone
 import { DashboardComponent } from './screens/dashboard/dashboard/dashboard.component';
 import { HomeAdminComponent } from './screens/dashboard/home-admin/home-admin.component';
 import { AddEditPersonComponent } from './screens/dashboard/add-edit-person/add-edit-person.component';
+=======
+import { LoginPageComponent } from './screens/login-page/login-page.component';
+>>>>>>> 6c269e909c1a070abc06d57e25101ddef655d750
 
 @NgModule({
   declarations: [
@@ -31,6 +35,7 @@ import { AddEditPersonComponent } from './screens/dashboard/add-edit-person/add-
     SignUComponent,
     AdminEditPersonsComponent,
     NavBarComponent,
+<<<<<<< HEAD
     BodyComponent,
     SidenavComponent,
     StatisticsComponent,
@@ -38,6 +43,9 @@ import { AddEditPersonComponent } from './screens/dashboard/add-edit-person/add-
     DashboardComponent,
     HomeAdminComponent,
     AddEditPersonComponent
+=======
+    LoginPageComponent
+>>>>>>> 6c269e909c1a070abc06d57e25101ddef655d750
   ],
   imports: [
     BrowserModule,

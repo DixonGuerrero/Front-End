@@ -33,8 +33,8 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.wrapper .form-box.register{/*separar del borde*/
-    right: 0;
+.wrapper .form-box.login{/*separar del borde*/
+    left: 0;
     padding: 0 60px 0 40px;
 }
 
@@ -143,8 +143,8 @@ top: 0;
     flex-direction: column;
     justify-content: center;
 }
-.wrapper .info-text.register {/*ubicacion de la info*/
-    left: -150px;
+.wrapper .info-text.login {/*ubicacion de la info*/
+    right: 0;
     text-align: right;
     padding: 0 50px 60px 150px;
 }
@@ -157,17 +157,17 @@ top: 0;
 }
 .info-text p{/*texto informativo*/
     font-size: 21px;
-    color: #623ccc;
+    color: #2c0e7c;
 }
 
 .wrapper .bg-animate{/*fondo de color*/
     position: absolute;
-    top: 100%;
-    left: 250px;
+    top: -4px;
+    right: 0;
     width: 850px;
-    height: 700px;
+    height: 600px;
     background: linear-gradient(45deg, #081b29, #0ef);
-    border-top: 3px solid #0ef;
-    transform: rotate(-11deg) skewY(-41deg);
-    transform-origin: bottom left;
+    border-bottom: 3px solid rgb(91, 52, 196);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
 }

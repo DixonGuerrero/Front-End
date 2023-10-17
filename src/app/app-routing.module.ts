@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminEditPersonsComponent } from './screens/dashboard/admin-edit-persons/admin-edit-persons.component';
 import { HomePageComponent } from './screens/home-page/home-page.component';
+<<<<<<< HEAD
 import { DashboardComponent } from './screens/dashboard/dashboard/dashboard.component';
 import { HomeAdminComponent } from './screens/dashboard/home-admin/home-admin.component';
 import { StatisticsComponent } from './screens/dashboard/statistics/statistics.component';
@@ -29,6 +30,18 @@ const routes: Routes = [
       { path: 'settingsAdmin', component: SettingsComponent },
     ],
   },
+=======
+import { SignUComponent } from './screens/sign-up/sign-u.component';
+import { LoginPageComponent } from './screens/login-page/login-page.component';
+
+
+const routes: Routes = [
+  { path: 'admin/edit/person', component:AdminEditPersonsComponent},
+  { path: 'homepage', component: HomePageComponent },
+  { path: 'signUp', component: SignUComponent },
+  { path: 'login', component: LoginPageComponent},
+  { path: '', component:HomePageComponent}
+>>>>>>> 6c269e909c1a070abc06d57e25101ddef655d750
 ];
 
 
