@@ -1,0 +1,19 @@
+.title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn{
+        margin: 10px;
+    }
+}
+
+.container{
+
+    .table{
+        margin-bottom:20px;
+    }
+}
+
+
+

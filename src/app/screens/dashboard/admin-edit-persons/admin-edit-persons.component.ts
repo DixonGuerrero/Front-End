@@ -23,6 +23,16 @@ export class AdminEditPersonsComponent {
   getListPerson() {
     this._PersonService.getListPersons().subscribe((data) => {
       this.listPerson = data;
-     })
+
+       this.listPerson.forEach(item => {
+          if (item.Id_Tipo_Usuario == '1') {
+              item.Id_Tipo_Usuario ='Admin';
+          } else {
+              item.Id_Tipo_Usuario = 'Cliente';
+          }
+      });
+    })
+   
   }
+  
 }

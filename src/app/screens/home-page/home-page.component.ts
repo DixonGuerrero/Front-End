@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { MovieService } from '../../services/movie.service';
 import { Movie } from '../../interfaces/movie';
-import { ThisReceiver } from '@angular/compiler';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home-page',
@@ -16,7 +17,7 @@ export class HomePageComponent {
   moviesTopRated: Movie[] = [];
   moviesUpComming : Movie[] = [];
 
-  constructor(private _movieService: MovieService) {}
+  constructor(private _movieService: MovieService,private router:Router) {}
 
 
   
@@ -25,6 +26,7 @@ export class HomePageComponent {
     this.loadNewMovies();
     this.loadTopRatedMovies();
     this.loadUpCommmingMovies();
+    
   }
 
 
@@ -75,5 +77,9 @@ export class HomePageComponent {
       }
     );
   }
+
+
+
+
 
 }
