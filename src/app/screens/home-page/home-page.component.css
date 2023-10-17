@@ -46,6 +46,9 @@ h3{/*Titulos categorías*/
     width: 190px; /*que tanto se desplaza el menu)*/
     transition: 0.5s;
 }
+.main-tittle{
+  margin-left: 50px;
+}
 .menu img{
     height: 50px;
     padding: 10px; 
@@ -191,7 +194,7 @@ padding: 2px;/*tamaño y oculto los simbolos del mnu*/
   }
   .dropdown a{
     display:block;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 8px 15px; 
   }
@@ -199,17 +202,19 @@ padding: 2px;/*tamaño y oculto los simbolos del mnu*/
     display: none;
     position: absolute;
     background:#8138c5;
+    
     box-shadow: 2px 5px 5px black;/*sombra*/
     min-width: 100px;/*largo del cuadrito*/
     border-radius: 8px;
   }
   .dropdown:hover .cuadrito{
-display:flex;
-flex-direction: column;
+  display:flex;
+  flex-direction: column;
   }
 
   .dropdown a:hover{
     background-color: #e4e8dd;
+    color: black;
   }
 /*seemore*/
 .cta {
@@ -296,3 +301,5 @@ flex-direction: column;
       fill: white;
     }
   }
+
+ 
