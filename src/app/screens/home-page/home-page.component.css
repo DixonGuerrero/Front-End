@@ -85,6 +85,7 @@ position: relative;
 background: #fff;/*fondo de pantalla*/
 width: 95%; /*acomodó centrado el contenedor de action*/
 padding: 2px;/*tamaño y oculto los simbolos del mnu*/
+
 }
 .useritem{
     width: 50px;
@@ -103,6 +104,7 @@ padding: 2px;/*tamaño y oculto los simbolos del mnu*/
     box-shadow: 0 0 25px #0ef;
     padding: 10px 2rem;
     margin-bottom: 1rem;
+    border-bottom: 2px solid aqua;
 }
 .header--tittle{
     color: rgba(113,99,186,255);    
