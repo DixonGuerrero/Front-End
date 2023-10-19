@@ -26,7 +26,7 @@
           </a>
         </li>
         <li>
-          <a href="dashboard/homeAdmin">
+          <a href="#">
             <i class="fa-solid fa-star"></i>
             <span>Action</span>
           </a>
@@ -82,7 +82,7 @@
             <div class="cuadrito">
                 <a href="">Edit</a>
                 <a href="">Admin</a>
-                <a href="dashboard">Dashboard</a>
+                <a *ngIf="isAdmin" href="dashboard">Dashboard</a>
             </div>  
             </div><!-- logo usuario-->
             <div class="container">

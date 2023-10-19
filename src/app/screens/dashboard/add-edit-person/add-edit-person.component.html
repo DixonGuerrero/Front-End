@@ -1,1 +1,73 @@
-<h1>Editar o Agregar Persona</h1>
+<div class="row mt-5">
+  <div class="col-lg-4 offset-lg-4">
+    <div class="card bg-secondary mb-3" style="max-width: 27rem">
+      <div class="card-header text-center">Agregar Persona</div>
+      <div class="card-body">
+        <!--Agregamos el formulario -->
+        <form>
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label mt-4"
+                >Nombre de usuario</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter nombre usuario"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label mt-4"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Nunca compartiremos su correo electrónico con nadie más.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="form-label mt-4"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+                autocomplete="off"
+              />
+            </div>
+
+            <fieldset class="form-group">
+              <legend class="mt-4">Admin</legend>
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                 
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >Admin</label
+                >
+              </div>
+            </fieldset>
+
+            <div class="row mt-3 text-center">
+              <div class="col-lg-6">
+                <button routerLink="../../personEditAdmin" type="button" class="btn btn-outline-light">Volver</button>
+              </div>
+
+              <div class="col-lg-6">
+                <button  type="button" class="btn btn-outline-dark">Aceptar</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

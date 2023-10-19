@@ -1,19 +1,21 @@
 .title {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 
-    .btn{
-        margin: 10px;
-    }
+  .btn {
+    margin: 10px;
+  }
 }
 
-.container{
-
-    .table{
-        margin-bottom:20px;
-    }
+.container {
+  .table {
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
-
-
+.table img{
+  height: 50px;
+  width: auto;
+}

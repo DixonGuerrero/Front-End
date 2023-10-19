@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-interface SideNavToggle{
+interface SideNavToggle {
   screenWidth: number;
   collapsed: boolean;
 }
@@ -8,13 +9,26 @@ interface SideNavToggle{
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css'],
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
+  isSideNavCollapsed = false;
+  screenWidth = 0;
+  isAdmin = true;
 
-   isSideNavCollapsed = false;
-   screenWidth= 0;
-  
+  constructor(private router: Router) {
+    
+  }
+
+ 
+
+  ngOnInit(): void {
+    if (!this.isAdmin) {
+      this.router.navigate(['homepage'])
+    }
+
+  }
+
   onToggleSideNav(data: SideNavToggle): void {
     this.screenWidth = data.screenWidth;
     this.isSideNavCollapsed = data.collapsed;

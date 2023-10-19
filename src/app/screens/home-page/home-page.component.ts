@@ -15,7 +15,8 @@ export class HomePageComponent {
   moviesRecommended: Movie[] = [];
   moviesNew: Movie[] = [];
   moviesTopRated: Movie[] = [];
-  moviesUpComming : Movie[] = [];
+  moviesUpComming: Movie[] = [];
+  isAdmin = false;
 
   constructor(private _movieService: MovieService,private router:Router) {}
 

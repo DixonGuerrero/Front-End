@@ -18,7 +18,16 @@ export class PersonService {
 
   }
 
-  getListPersons():  Observable<Person[]> {
-    return this.http.get<Person[]>(`${this.myAppUrl}${this.myApiUrl}`)
+  getListPersons(): Observable<Person[]> {
+    
+    let login = this.http.get<Person[]>(`${this.myAppUrl}${this.myApiUrl}`);
+
+    login.subscribe((data) => {
+      console.log(data)
+    })
+    
+    return login
+
+
   }
 }
