@@ -8,7 +8,7 @@
    </div>
    
 
-   <table class="table table-dark">
+   <table *ngIf="listPerson.length > 0" class="table table-dark">
       <thead>
          <tr>
             <th scope="col">Id</th>
@@ -37,5 +37,7 @@
          </tr>
       </tbody>
    </table>
+
+   <h3 *ngIf="listPerson.length == 0">No hay personas para mostrar</h3>
 
 </div>

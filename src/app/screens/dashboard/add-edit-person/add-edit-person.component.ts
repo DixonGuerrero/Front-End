@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Person } from 'src/app/interfaces/person';
+import { PersonService } from 'src/app/services/person.service';
 
 @Component({
   selector: 'app-add-edit-person',
@@ -10,7 +11,7 @@ import { Person } from 'src/app/interfaces/person';
 export class AddEditPersonComponent {
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,private _ServicePerson:PersonService) {
     this.form = this.fb.group({
       nombre_Usuario: ['', Validators.required],
       email: ['', Validators.required],
@@ -28,6 +29,8 @@ export class AddEditPersonComponent {
       contrasenia:this.form.value.password
     }
 
-    console.log(persona)
+    this._ServicePerson.saveProduct(persona).subscribe(() => {
+      console.log('Persona agregada con exito')
+    })
   }
 }

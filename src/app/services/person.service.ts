@@ -34,4 +34,8 @@ export class PersonService {
   deletePerson(id:number): Observable<void>{
     return this.http.delete<void>(`${this.myAppUrl}${this.myApiUrl}${id}`);
   }
+
+  saveProduct(persona: Person): Observable<void>{
+    return this.http.post<void>(`${this.myAppUrl}${this.myApiUrl}`,persona);
+  }
 }
