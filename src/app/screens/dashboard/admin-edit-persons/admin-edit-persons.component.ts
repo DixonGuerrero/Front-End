@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
+
 import { Person } from 'src/app/interfaces/person';
 import { PersonService } from 'src/app/services/person.service';
 
@@ -33,6 +34,12 @@ export class AdminEditPersonsComponent {
       });
     })
    
+  }
+
+  deletePerson(id: number) {
+    this._PersonService.deletePerson(id).subscribe(() => { 
+      this.getListPerson();
+    })
   }
   
 }

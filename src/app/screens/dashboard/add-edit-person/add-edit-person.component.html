@@ -4,27 +4,35 @@
       <div class="card-header text-center">Agregar Persona</div>
       <div class="card-body">
         <!--Agregamos el formulario -->
-        <form>
+        <form [formGroup]="form" (ngSubmit)="addPersona()">
           <fieldset>
             <div class="form-group">
               <label for="exampleInputEmail1" class="form-label mt-4"
                 >Nombre de usuario</label
               >
               <input
+                formControlName="nombre_Usuario"
                 type="email"
                 class="form-control"
                 placeholder="Enter nombre usuario"
               />
+              <span *ngIf="form.get('nombre_Usuario')?.hasError('required') && form.get('nombre_Usuario')?.touched">
+                El campo Nombre de Usuario <strong>Es requerido</strong>
+              </span>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1" class="form-label mt-4"
                 >Email</label
               >
               <input
+                formControlName="email"
                 type="email"
                 class="form-control"
                 placeholder="Enter email"
               />
+              <span *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">
+                El campo Email <strong>Es requerido</strong>
+              </span><br>
               <small id="emailHelp" class="form-text text-muted"
                 >Nunca compartiremos su correo electrónico con nadie más.</small
               >
@@ -34,22 +42,22 @@
                 >Password</label
               >
               <input
+                formControlName="password"
                 type="password"
                 class="form-control"
                 id="exampleInputPassword1"
                 placeholder="Password"
                 autocomplete="off"
               />
+              <span *ngIf="form.get('password')?.hasError('required') && form.get('password')?.touched">
+                El campo Password <strong>Es requerido</strong>
+              </span>
             </div>
 
             <fieldset class="form-group">
               <legend class="mt-4">Admin</legend>
               <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                 
-                />
+                <input class="form-check-input" type="checkbox" />
                 <label class="form-check-label" for="flexSwitchCheckDefault"
                   >Admin</label
                 >
@@ -58,11 +66,19 @@
 
             <div class="row mt-3 text-center">
               <div class="col-lg-6">
-                <button routerLink="../../personEditAdmin" type="button" class="btn btn-outline-light">Volver</button>
+                <button
+                  routerLink="../../personEditAdmin"
+                  type="button"
+                  class="btn btn-outline-light"
+                >
+                  Volver
+                </button>
               </div>
 
               <div class="col-lg-6">
-                <button  type="button" class="btn btn-outline-dark">Aceptar</button>
+                <button  type="submit" class="btn btn-outline-dark">
+                  Aceptar
+                </button>
               </div>
             </div>
           </fieldset>
